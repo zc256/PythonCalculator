@@ -15,8 +15,5 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(job.__name__, test_class.__name__)
             pprint(vars(staff))
 
-	
-
-
 if __name__ == '__main__':
     unittest.main()
