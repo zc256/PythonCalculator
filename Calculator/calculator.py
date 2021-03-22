@@ -7,6 +7,7 @@ from Calculator.squareRoot import squareRoot
 from Calculator.addSub import addSub
 from Calculator.sqrtSquared import sqrtSquared
 from Calculator.multAdd import multAdd
+from Calculator.addSubDiv import addSubDiv
 
 class Calculator:
 	res = 0
@@ -47,4 +48,8 @@ class Calculator:
 
 	def multAdd(self,a,b,c,d):
 		self.res = multAdd(a,b,c,d)
+		return self.res
+
+	def addSubDiv(self,a,b,c,d,e):
+		self.res = addSubDiv(a,b,c,d,e)
 		return self.res

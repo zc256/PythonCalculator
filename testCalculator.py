@@ -69,7 +69,16 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/Unit Test Multiplication plus Addition.csv").data
         for row in test_data:
             res = float(row['Result'])
-            self.assertEqual(self.calculator.multAdd(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4']), res)
+            self.assertEqual(self.calculator.multAdd(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4']),
+                             res)
+            self.assertEqual(self.calculator.res, res)
+
+    def test_addSubDiv(self):
+        test_data = CsvReader("Tests/Data/Unit Test Add Sub Div.csv").data
+        for row in test_data:
+            res = float(row['Result'])
+            self.assertEqual(self.calculator.addSubDiv(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                       row['Value 5']), res)
             self.assertEqual(self.calculator.res, res)
 
 
