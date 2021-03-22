@@ -58,6 +58,13 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.addSub(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4']), res)
             self.assertEqual(self.calculator.res, res)
 
+    def test_sqrtSquared(self):
+        test_data = CsvReader("Tests/Data/Unit Test Square Root plus Squared.csv").data
+        for row in test_data:
+            res = float(row['Result'])
+            self.assertEqual(self.calculator.sqrtSquared(row['Value 1']), res)
+            self.assertEqual(self.calculator.res, res)
+
     def test_results_property(self):
         self.assertEqual(self.calculator.res, 0)
 

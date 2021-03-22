@@ -5,6 +5,7 @@ from division import divide
 from squared import squared
 from squareRoot import squareRoot
 from addSub import addSub
+from sqrtSquared import sqrtSquared
 
 class Calculator:
 	res = 0
@@ -37,4 +38,8 @@ class Calculator:
 
 	def addSub(self,a,b,c,d):
 		self.res = addSub(a,b,c,d)
+		return self.res
+
+	def sqrtSquared(self, a):
+		self.res = sqrtSquared(a)
 		return self.res
