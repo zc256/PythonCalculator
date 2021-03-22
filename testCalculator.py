@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Calculator)
 
     def test_addition(self):
-        test_data = CsvReader("Tests/Data/Unit Test Addition.csv").data
+        test_data = CsvReader("Tests/Unit Test Addition.csv").data
         for row in test_data:
             res = float(row['Result'])
             self.assertEqual(self.calculator.addRes(row['Value 1'], row['Value 2']), res)

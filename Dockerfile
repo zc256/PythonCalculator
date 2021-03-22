@@ -2,4 +2,4 @@ FROM python:3
 
 ADD . .
 
-CMD ["python"]
+CMD ["python", "./testCalculator.py"]
