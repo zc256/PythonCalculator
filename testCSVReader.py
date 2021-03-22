@@ -1,5 +1,5 @@
 import unittest
-from CsvReader.CsvReader import CsvReader, ClassFactory
+from csvReader import CsvReader, ClassFactory
 from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
 
         for job in staff:
             self.assertEqual(job.__name__, test_class.__name__)
-            pprint(vars(staff))
+            # pprint(vars(staff))
 
 if __name__ == '__main__':
     unittest.main()

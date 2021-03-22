@@ -1,13 +1,12 @@
-from Calculator.addition import add
-from Calculator.subtration import sub
-from Calculator.multiplication import mult
-from Calculator.division import divide
-from Calculator.squared import squared
-from Calculator.squareRoot import squareRoot
+from addition import add
+from subtraction import sub
+from multiplication import mult
+from division import divide
+from squared import squared
+from squareRoot import squareRoot
 
 class Calculator:
 	res = 0
-
 	def __init__(self):
 		pass
 
@@ -27,10 +26,10 @@ class Calculator:
 		self.res = divide(a,b)
 		return self.res
 	
-	def squareRes(self, a, b):
-		self.res = squared(a,b)
+	def squareRes(self, a):
+		self.res = squared(a)
 		return self.res
 	
-	def squareRootRes(self, a, b):
-		self.res = squareRoot(a,b)
+	def squareRootRes(self, a):
+		self.res = squareRoot(a)
 		return self.res
