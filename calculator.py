@@ -4,6 +4,7 @@ from multiplication import mult
 from division import divide
 from squared import squared
 from squareRoot import squareRoot
+from addSub import addSub
 
 class Calculator:
 	res = 0
@@ -32,4 +33,8 @@ class Calculator:
 	
 	def squareRootRes(self, a):
 		self.res = squareRoot(a)
+		return self.res
+
+	def addSub(self,a,b,c,d):
+		self.res = addSub(a,b,c,d)
 		return self.res
