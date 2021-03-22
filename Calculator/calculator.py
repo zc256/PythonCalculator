@@ -6,6 +6,7 @@ from Calculator.squared import squared
 from Calculator.squareRoot import squareRoot
 from Calculator.addSub import addSub
 from Calculator.sqrtSquared import sqrtSquared
+from Calculator.multAdd import multAdd
 
 class Calculator:
 	res = 0
@@ -42,4 +43,8 @@ class Calculator:
 
 	def sqrtSquared(self, a):
 		self.res = sqrtSquared(a)
+		return self.res
+
+	def multAdd(self,a,b,c,d):
+		self.res = multAdd(a,b,c,d)
 		return self.res
