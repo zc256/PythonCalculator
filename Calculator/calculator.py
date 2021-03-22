@@ -1,11 +1,11 @@
-from addition import add
-from subtraction import sub
-from multiplication import mult
-from division import divide
-from squared import squared
-from squareRoot import squareRoot
-from addSub import addSub
-from sqrtSquared import sqrtSquared
+from Calculator.addition import add
+from Calculator.subtraction import sub
+from Calculator.multiplication import mult
+from Calculator.division import divide
+from Calculator.squared import squared
+from Calculator.squareRoot import squareRoot
+from Calculator.addSub import addSub
+from Calculator.sqrtSquared import sqrtSquared
 
 class Calculator:
 	res = 0
